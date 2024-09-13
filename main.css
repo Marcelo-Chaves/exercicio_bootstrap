@@ -1,0 +1,65 @@
+body{
+    background-image: url(./img/fundo.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Faz a imagem cobrir toda a área do fundo */
+    background-position: center center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    height: 90vh; /* Garante que a altura seja igual à altura da viewport */
+    width: 100vw; /* Garante que a largura seja igual à largura da viewport */
+    display: block;
+}
+.container{
+    background: rgba(28, 53, 163, 0.582);
+    margin-top: 200px;
+    margin-left:650px ;
+    margin-right:750px ;
+    padding: 168px;
+    height: 51px;
+    pointer-events: none; 
+    width: 700px;
+    pointer-events: auto; /* Permitir interação */
+}
+p{
+    color: white;
+}
+form{
+    margin-top: -150px;
+}
+h2 h4{
+    text-align: center;
+}
+/* Aplica as regras para telas menores que 768px (telas de tablets e celulares) */
+@media screen and (max-width: 768px) {
+    .container{
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%; /* Reduz a largura do container para caber em telas menores */
+        padding: 50px;
+    }
+    
+    form {
+        margin-top: -50px; /* Ajuste o espaçamento conforme necessário */
+    }
+}
+
+/* Aplica as regras para telas menores que 480px (smartphones) */
+@media screen and (max-width: 480px) {
+    .container{
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%; /* O container ocupa quase toda a largura da tela */
+        padding: 30px;
+    }
+
+    form {
+        margin-top: -30px; /* Ajuste para se adequar melhor a telas menores */
+    }
+
+    h2, h4 {
+        font-size: 1.2em; /* Ajusta o tamanho das fontes para telas pequenas */
+    }
+}
